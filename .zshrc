@@ -6,6 +6,9 @@ COMPLETION_WAITING_DOTS="true"
 source $ZSH/oh-my-zsh.sh
 source /home/$(whoami)/bin/antigen.zsh
 
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen apply
+
 plugins=(git zsh-autosuggestions encode64 colored-man-pages colorize cp)
 
 alias ll='ls -lAhp'
