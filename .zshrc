@@ -1,10 +1,10 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH=/home/$(whoami)/.oh-my-zsh
+export ZSH=~$USER/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 COMPLETION_WAITING_DOTS="true"
 
 source $ZSH/oh-my-zsh.sh
-source /home/$(whoami)/bin/antigen.zsh
+source ~$USER/bin/antigen.zsh
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
